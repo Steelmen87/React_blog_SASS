@@ -1,0 +1,20 @@
+.social {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.social__item {
+  margin: 0 .75rem;
+}
+
+.profile__text {
+  padding: 3rem 0;
+  margin: 3rem 0;
+  font-size: 12px;
+  color: $white;
+  text-align: center;
+  border-top: 1px solid #1C1C1C;
+  border-bottom: 1px solid #1C1C1C;
+
+}
