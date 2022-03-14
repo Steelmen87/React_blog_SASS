@@ -3,6 +3,8 @@ import SubNav from "./Subnav";
 import Navigation from "./Navigation";
 
 export default function Header() {
+
+
     const headList = [
         {
             title: 'Главная',
@@ -41,12 +43,14 @@ export default function Header() {
 
     ]
 
+
     return <div>
         <header className="header">
             <div className="header__left">
                 <nav className="nav">
                     <ul className="nav__list">
-                        {headList.map((el, i) => <li>
+                        {headList.map((el, i) =>
+                            <li>
                             <Navigation
                                 key={i + "index"}
                                 el={el}
