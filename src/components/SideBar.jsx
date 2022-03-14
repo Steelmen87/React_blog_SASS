@@ -47,6 +47,9 @@ export default function Sidebar() {
                 </div>
             </div>
         </div>
-        <div className="sidebar_footer"></div>
+        <div className="sidebar_footer">
+            <a href="#" className="btn btn--red">Мои работы</a>
+            <button type="button" className="btn btn--blue">Написать мне</button>
+        </div>
     </div>
 }
