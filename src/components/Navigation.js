@@ -12,9 +12,12 @@ export default function Navigation({el}) {
     return <div onMouseLeave={deactivate} onMouseEnter={activeLink}>
         <a href="#"
            className={"nav__link" + " " + active}
-           /*onMouseEnter={activeLink}*/
            onClick={active === "has-subnav" ? deactivate : activeLink}
         >{el.title}</a>
-        {active && <SubNav subNav={el.subLi} deactivate={deactivate} activeLink={activeLink}/>}
+        {active && <SubNav
+            subNav={el.subLi}
+            deactivate={deactivate}
+            activeLink={activeLink}/>
+        }
     </div>
 }

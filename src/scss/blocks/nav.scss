@@ -2,19 +2,30 @@
 
 }
 
+.pos {
+  position: relative;
+}
+
 .nav__list {
   display: flex;
+  position: relative;
 }
-.nav__sub__li{
+
+.nav__sub__li {
   /*transition: background-color .2s linear;*/
+  display: block;
   background-color: $blue;
-  padding:5px;
-  &:hover{
+  padding: .45rem 1.2rem;
+  transition: background-color .2s linear;
+  box-shadow: 0 6px 8px rgba($black, .2);
+
+  &:hover {
     background-color: darken($blue, 10%);
   }
 }
+
 .nav__item {
-  position: relative;
+
   text-decoration: none;
 
   color: $white;
@@ -32,6 +43,7 @@
 }
 
 .nav__link {
+  position: relative;
   display: block;
   line-height: 1.2rem;
   font-size: 1.1rem;
