@@ -58,7 +58,7 @@ export default function Header() {
             <div className="header__right">
                 <nav className="nav">
                     <ul className="nav__list">
-                        <li>
+                        <li className="nav__profile">
                             <a href="#" className="nav__link">Профиль</a>
                         </li>
                     </ul>
