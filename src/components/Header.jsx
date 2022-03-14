@@ -1,10 +1,7 @@
-import React, {useState} from "react";
-import SubNav from "./Subnav";
+import React from "react";
 import Navigation from "./Navigation";
 
 export default function Header() {
-
-
     const headList = [
         {
             title: 'Главная',
@@ -43,7 +40,6 @@ export default function Header() {
 
     ]
 
-
     return <div>
         <header className="header">
             <div className="header__left">
@@ -51,11 +47,11 @@ export default function Header() {
                     <ul className="nav__list">
                         {headList.map((el, i) =>
                             <li>
-                            <Navigation
-                                key={i + "index"}
-                                el={el}
-                            />
-                        </li>)}
+                                <Navigation
+                                    key={i + "index"}
+                                    el={el}
+                                />
+                            </li>)}
                     </ul>
                 </nav>
             </div>

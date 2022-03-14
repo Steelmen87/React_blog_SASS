@@ -9,7 +9,7 @@ export default function Navigation({el}) {
     const deactivate = () => {
         setActive("")
     }
-    return <div>
+    return <div onMouseLeave={deactivate} onMouseEnter={activeLink}>
         <a href="#"
            className={"nav__link" + " " + active}
            /*onMouseEnter={activeLink}*/
