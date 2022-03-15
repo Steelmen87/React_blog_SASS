@@ -7,6 +7,8 @@ import rect4 from "../assets/images/Rectangle 4.jpg"
 import AddPost from "./AddPost";
 import Post from "./Post";
 import PostHeader from "./PosthHeader";
+import PostVideo from "./PostVideo";
+import Pagination from "./Pagination";
 
 export default function Main() {
     const stories = [
@@ -37,5 +39,7 @@ export default function Main() {
         <AddPost/>
         <Post />
         <PostHeader/>
+        <PostVideo/>
+        <Pagination/>
     </div>
 }
