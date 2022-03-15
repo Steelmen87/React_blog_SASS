@@ -6,6 +6,7 @@ import rect3 from "../assets/images/Rectangle 3.jpg"
 import rect4 from "../assets/images/Rectangle 4.jpg"
 import AddPost from "./AddPost";
 import Post from "./Post";
+import PostHeader from "./PosthHeader";
 
 export default function Main() {
     const stories = [
@@ -35,5 +36,6 @@ export default function Main() {
         <Stories stories={stories}/>
         <AddPost/>
         <Post />
+        <PostHeader/>
     </div>
 }

@@ -21,7 +21,6 @@ export default function PostReducer(state = InitialState, action) {
                     date: action.date
                 }
             ]
-
         default:
             return state;
     }
