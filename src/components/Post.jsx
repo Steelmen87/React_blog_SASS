@@ -1,27 +1,29 @@
-import React, {useState} from "react";
-import send from "../assets/images/send.svg"
+import React from "react";
 
 export default function Post() {
-    const[content,setContent] = useState("")
-    const changeContent = (e) => {
-        setContent(e.currentTarget.value)
-    }
 
-    return <div className="add-post">
-        <form action="/" method="post" className="add-post__form">
-            <textarea className="add-post__textarea"
-                      value={content}
-                      onChange={changeContent}
-                      name="post-text"
-                      placeholder="Напишите что-нибудь"/>
-            <div className="add-post__form-actions">
-                <label className="add-post__file" htmlFor="add-post-file">
-                    <input type="file" id="add-post-file"/>
-                </label>
-                <button className="add-post__send" type="submit">
-                    <img src={send} alt="send"/>
-                </button>
+    return <div>
+        <div className="post">
+            <div className="post__content">
+                <p className="post__text">
+                    Lorem ipsum dolor sit
+                    amet, consectetur adipisicing elit.
+                    A ab asperiores at autem, delectus
+                    doloribus dolorum ea eligendi
+                    ullam!
+                </p>
+
             </div>
-        </form>
+            <div className="post__footer">
+                <ul className="post__data">
+                    <li className="post-data-item">
+                        <time dateTime="1987-10-10">
+                            1987-10-10
+                        </time>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
     </div>
 }

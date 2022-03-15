@@ -7,7 +7,7 @@ html {
 }
 
 body {
-  background-color: #181818;
+  background-color: $primary;
   font-size: 21px;
   color: $white;
   font-family: -apple-system,
@@ -37,6 +37,7 @@ body {
 @import "blocks/main";
 @import "blocks/stories";
 @import "blocks/add-post";
+@import "blocks/post";
 @import "blocks/container";
 @import "blocks/profile";
 @import "blocks/social";

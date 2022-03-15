@@ -1,10 +1,11 @@
 import React from "react";
 import Stories from "./Stories";
-import Post from "./Post";
 import rect1 from "../assets/images/Rectangle 1.jpg"
 import rect2 from "../assets/images/Rectangle 2.jpg"
 import rect3 from "../assets/images/Rectangle 3.jpg"
 import rect4 from "../assets/images/Rectangle 4.jpg"
+import AddPost from "./AddPost";
+import Post from "./Post";
 
 export default function Main() {
     const stories= [
@@ -31,6 +32,7 @@ export default function Main() {
     ]
     return <div>
         <Stories stories={stories}/>
+        <AddPost/>
         <Post/>
     </div>
 }
