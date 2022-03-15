@@ -1,7 +1,9 @@
 import React from "react";
+import {useSelector} from "react-redux";
 
-export default function Post({posts}) {
 
+export default function Post() {
+    const posts = useSelector((state) => state.postReducer)
     return <div>
         {posts.map(post => <div className="post">
             <div className="post__content">

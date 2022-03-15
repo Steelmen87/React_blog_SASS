@@ -4,6 +4,7 @@ import Navigation from "./Navigation";
 export default function Header() {
     const headList = [
         {
+            id:'1',
             title: 'Главная',
             subLi:
                 [
@@ -12,6 +13,7 @@ export default function Header() {
                     {link: "#", text: "Продвижение видео",}]
         },
         {
+            id:'2',
             title: 'Статьи',
             subLi:
                 [
@@ -20,6 +22,7 @@ export default function Header() {
                     {link: "#", text: "Разное",}]
         },
         {
+            id:'3',
             title: 'Обо мне',
             subLi:
                 [
@@ -30,6 +33,7 @@ export default function Header() {
                 ]
         },
         {
+            id:'4',
             title: 'Реклама',
             subLi:
                 [
@@ -46,7 +50,7 @@ export default function Header() {
                 <nav className="nav">
                     <ul className="nav__list">
                         {headList.map((el, i) =>
-                            <li>
+                            <li key={el.id}>
                                 <Navigation
                                     key={i + "index"}
                                     el={el}

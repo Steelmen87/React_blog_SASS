@@ -30,17 +30,10 @@ export default function Main() {
             dateTime: '2021-09-24'
         },
     ]
-    const posts = [
-        {
-            id: '1',
-            title: 'Articles',
-            text: 'Text for post',
-            date: '1987-10-10'
-        }
-    ]
+
     return <div>
         <Stories stories={stories}/>
         <AddPost/>
-        <Post posts={posts}/>
+        <Post />
     </div>
 }
