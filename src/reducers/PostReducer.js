@@ -1,6 +1,5 @@
 import {v4} from "uuid";
 
-
 const ADD_POST = "ADD_POST"
 const InitialState = [
     {
@@ -8,13 +7,7 @@ const InitialState = [
         /*title: 'Articles',*/
         text: 'Text for post',
         date: '1987-10-10'
-    },
-    {
-        id: '2',
-        /*title: 'Articles 2',*/
-        text: 'Text for post 2',
-        date: '1987-11-11'
-    },
+    }
 ]
 export default function PostReducer(state = InitialState, action) {
     switch (action.type) {
@@ -33,6 +26,6 @@ export default function PostReducer(state = InitialState, action) {
             return state;
     }
 }
-export const AddPostAC = (text,date) => {
-    return {type: ADD_POST, text,date}
+export const AddPostAC = (text, date) => {
+    return {type: ADD_POST, text, date}
 }
