@@ -8,31 +8,39 @@ import AddPost from "./AddPost";
 import Post from "./Post";
 
 export default function Main() {
-    const stories= [
+    const stories = [
         {
-            src:rect1,
-            title:'Отдыхаю на природе',
-            dateTime:'2021-09-21'
+            src: rect1,
+            title: 'Отдыхаю на природе',
+            dateTime: '2021-09-21'
         },
         {
-            src:rect2,
-            title:'Заканчиваю сложный проект',
-            dateTime:'2021-09-22'
+            src: rect2,
+            title: 'Заканчиваю сложный проект',
+            dateTime: '2021-09-22'
         },
         {
-            src:rect3,
-            title:'Переехал в новую квартиру',
-            dateTime:'2021-09-23'
+            src: rect3,
+            title: 'Переехал в новую квартиру',
+            dateTime: '2021-09-23'
         },
         {
-            src:rect4,
-            title:'Осень заканчиваеться',
-            dateTime:'2021-09-24'
+            src: rect4,
+            title: 'Осень заканчиваеться',
+            dateTime: '2021-09-24'
         },
+    ]
+    const posts = [
+        {
+            id: '1',
+            title: 'Articles',
+            text: 'Text for post',
+            date: '1987-10-10'
+        }
     ]
     return <div>
         <Stories stories={stories}/>
         <AddPost/>
-        <Post/>
+        <Post posts={posts}/>
     </div>
 }
