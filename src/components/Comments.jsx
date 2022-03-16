@@ -1,4 +1,5 @@
 import React from "react";
+import CommentForComments from "./CommentForComments";
 
 export default function Comments() {
     return <div className="comments">
@@ -20,5 +21,6 @@ export default function Comments() {
                 type="submit">Отправить
             </button>
         </form>
+        <CommentForComments/>
     </div>
 }
