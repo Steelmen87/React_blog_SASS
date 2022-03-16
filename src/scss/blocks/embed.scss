@@ -1,4 +1,6 @@
-.embed {
+.embed,
+.fr-video {
+  display: block;
   position: relative;
   overflow: hidden;
 
@@ -7,10 +9,11 @@
     display: block;
     padding-top: 56.25%;
   }
+
   iframe,
   video,
   object,
-  embed{
+  embed {
     width: 100%;
     height: 100%;
 

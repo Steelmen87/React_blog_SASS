@@ -5,7 +5,7 @@ export default function PostVideo() {
     const posts = useSelector((state) => state.postReducer)
     return <div>
         {posts.map(post => <article className="post">
-            <div className="post__header post__header--video">
+            <div className="post__header">
                 <div className="embed">
                     <iframe
                         src="https://www.youtube.com/embed/CvEttNvty0U"

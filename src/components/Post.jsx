@@ -7,7 +7,7 @@ export default function Post() {
     return <div>
         {posts.map(post => <div className="post">
             <div className="post__content">
-                <p className="post__text">
+                <p className="post__description">
                     {post.text}
                 </p>
 

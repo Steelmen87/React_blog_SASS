@@ -6,7 +6,7 @@ export default function PostHeader() {
     const posts = useSelector((state) => state.postReducer)
     return <div>
         {posts.map(post => <article className="post">
-            <div className="post__header">
+            <div className="post__header post__header--preview">
                 <a href="#">
                     <img className="post__preview" src={headerImg} alt="img"/>
                 </a>
@@ -15,7 +15,7 @@ export default function PostHeader() {
                 <h2 className="post__title">
                     <a href="#">Как писать код быстро и безболезненно.</a>
                 </h2>
-                <p className="post__text">
+                <p className="post__description">
                     {post.text}
                 </p>
 
