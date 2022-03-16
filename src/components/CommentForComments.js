@@ -5,24 +5,59 @@ export default function CommentForComments() {
         <ul className="comments">
             <li className="comments__item">
                 <div className="comments__header">
-                    <img src="" alt=""/>
-                    <div className="comments__name">
-                        John Smite
+                    <img className="comments__avatar"
+                         src="https://place-hold.it/30" alt=""/>
+                    <div className="comments__author">
+                        <div className="comments__name">
+                            John Smite
+                        </div>
+                        <time className="comments__pubdate"
+                              dateTime="2021-12-12">
+                            1 week ago
+                        </time>
                     </div>
-                    <time className="comments__pubdate"
-                          dateTime="2021-12-12">
-                        1 week ago
-                    </time>
                 </div>
                 <div className="comments__text">
-                    <p>Lorem ipsum dolor sit amet, consectetur
-                        adipisicing elit. At aut harum illo libero
-                        magnam perferendis similique tempora unde
-                        vero. Distinctio eveniet incidunt nam nihil
-                        nostrum nulla
-                        perspiciatis praesentium unde voluptatibus?</p>
+                    Lorem ipsum dolor sit amet, consectetur
+                    adipisicing elit. At aut harum illo libero
+                    magnam perferendis similique tempora unde
+                    vero. Distinctio eveniet incidunt nam nihil
+                    nostrum nulla
+                    perspiciatis praesentium unde voluptatibus?
                 </div>
+                <button className="comments__replay ">ответить</button>
+                <ul className="comments">
+                    <li className="comments__item">
+                        <div className="comments__header">
+                            <img className="comments__avatar"
+                                 src="https://place-hold.it/30" alt=""/>
+                            <div className="comments__author">
+                                <div className="comments__name">
+                                    John Smite
+                                </div>
+                                <time className="comments__pubdate"
+                                      dateTime="2021-12-12">
+                                    1 week ago
+                                </time>
+                            </div>
+                        </div>
+                        <div className="comments__text">
+                            Lorem ipsum dolor sit amet, consectetur
+                            adipisicing elit. At aut harum illo libero
+                            magnam perferendis similique tempora unde
+                            vero. Distinctio eveniet incidunt nam nihil
+                            nostrum nulla
+                            perspiciatis praesentium unde voluptatibus?
+                        </div>
+                        <button className="comments__replay ">ответить</button>
+
+                    </li>
+
+                </ul>
+
+
             </li>
+
         </ul>
     </div>
 }
