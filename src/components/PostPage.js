@@ -79,7 +79,38 @@ export default function PostPage() {
                         </span>
                     </p>
                 </div>
+                <div className="related">
+                    <h3 className="related__title">
+                        Интересно по читать
+                    </h3>
+                    <ul className="related__list">
+                        <li className="related__list-item">
+                            <h4 className="related__list-title">
+                                <a href="#">Как я сходил на FrontEnd Conf 2021</a>
+                            </h4>
+                            <time className="related__list-date" dateTime="2021-06-12">21.06.12</time>
+                        </li>
+                        <li className="related__list-item">
+                            <h4 className="related__list-title">
+                                <a href="#">Как я сходил на FrontEnd Conf 2021</a>
+                            </h4>
+                            <time className="related__list-date" dateTime="2021-06-12">21.06.12</time>
+                        </li>
+                        <li className="related__list-item">
+                            <h4 className="related__list-title">
+                                <a href="#">Как я сходил на FrontEnd Conf 2021</a>
+                            </h4>
+                            <time className="related__list-date" dateTime="2021-06-12">21.06.12</time>
+                        </li>
+                        <li className="related__list-item">
+                            <h4 className="related__list-title">
+                                <a href="#">Как я сходил на FrontEnd Conf 2021</a>
+                            </h4>
+                            <time className="related__list-date" dateTime="2021-06-12">21.06.12</time>
+                        </li>
 
+                    </ul>
+                </div>
 
             </div>
 

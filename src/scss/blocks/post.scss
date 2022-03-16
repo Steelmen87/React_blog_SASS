@@ -50,8 +50,11 @@
 }
 
 .post__text {
+  padding-bottom: 1rem;
   font-size: 1.4rem;
   color: $white;
+
+  border-bottom: 1px solid #1C1C1C;
 
   h2, h3, h4, h5, h6 {
     margin-bottom: 2rem;
