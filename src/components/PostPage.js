@@ -3,6 +3,7 @@ import {useSelector} from "react-redux";
 import headerImg from "../assets/images/RectangleHeader.jpg"
 import share from "../assets/images/share 1.svg"
 import image from "../assets/images/image.jpg"
+import Comments from "./Comments";
 
 export default function PostPage() {
     /* const posts = useSelector((state) => state.postReducer)*/
@@ -80,7 +81,7 @@ export default function PostPage() {
                     </p>
                 </div>
                 <div className="related">
-                    <h3 className="related__title">
+                    <h3 className="post__subtitle">
                         Интересно по читать
                     </h3>
                     <ul className="related__list">
@@ -108,10 +109,9 @@ export default function PostPage() {
                             </h4>
                             <time className="related__list-date" dateTime="2021-06-12">21.06.12</time>
                         </li>
-
                     </ul>
                 </div>
-
+                <Comments/>
             </div>
 
         </article>
