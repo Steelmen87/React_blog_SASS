@@ -14,27 +14,34 @@
   line-height: 1.1;
   color: $white;
   text-decoration: none; //убираем ___
-  transition: background-color .2s linear;//плавное изминения color
+  transition: background-color .2s linear; //плавное изминения color
+  &:hover {
+  text-decoration: none;
+  }
 
-  &--red{
+  &--red {
     background-color: $red;
     box-shadow: 0 7px 17px -10px rgba($red, .25);
-    &:hover{
+
+    &:hover {
       background-color: darken($red, 10%); //затемняем на 10 %
     }
   }
 
-  &--blue{
+  &--blue {
     background-color: $blue;
     box-shadow: 0 7px 17px -10px rgba($blue, .25);
-    &:hover{
+
+    &:hover {
       background-color: darken($blue, 10%); //затемняем на 10 %
     }
   }
-  &--rounded{
+
+  &--rounded {
     border-radius: 0.41em;
   }
-  &--sm{
-    padding:0.7em 1.25em;
+
+  &--sm {
+    padding: 0.7em 1.25em;
   }
 }

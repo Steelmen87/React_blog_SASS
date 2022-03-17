@@ -4,6 +4,8 @@ import Sidebar from "./components/SideBar";
 import Main from "./components/Main";
 import PostPage from "./components/PostPage";
 import React from "react";
+import Works from "./components/Works";
+import Search from "./components/search";
 
 function App() {
     return (
@@ -17,7 +19,9 @@ function App() {
             <main className="main">
                 <div className="container">
                     {/*<Main/>*/}
-                    <PostPage/>
+                    {/*<PostPage/>*/}
+                    {/*<Works/>*/}
+                    <Search/>
                 </div>
             </main>
         </div>
