@@ -5,7 +5,7 @@ import Main from "./components/Main";
 import PostPage from "./components/PostPage";
 import React from "react";
 import Works from "./components/Works";
-import Search from "./components/search";
+import Search from "./components/Search";
 
 function App() {
     return (
