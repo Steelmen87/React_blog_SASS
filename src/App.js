@@ -6,6 +6,11 @@ import PostPage from "./components/PostPage";
 import React from "react";
 import Works from "./components/Works";
 import Search from "./components/Search";
+import Profile from "./components/Profile";
+import Signup from "./components/signup";
+import SignIn from "./components/signin";
+import Reset from "./components/reset";
+import Text from "./components/Text";
 
 function App() {
     return (
@@ -21,7 +26,12 @@ function App() {
                     {/*<Main/>*/}
                     {/*<PostPage/>*/}
                     {/*<Works/>*/}
-                    <Search/>
+                    {/*<Search/>*/}
+                    {/*<Profile/>*/}
+                    {/*<Signup/>*/}
+                    {/*<SignIn/>*/}
+                    {/*<Reset/>*/}
+                    <Text/>
                 </div>
             </main>
         </div>
