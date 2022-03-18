@@ -1,5 +1,7 @@
 .nav {
-
+  @include breakpoint($tablet-bp) {
+    display: none;
+  }
 }
 
 .pos {

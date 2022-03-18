@@ -58,7 +58,11 @@ export default function Header() {
                             </li>)}
                     </ul>
                 </nav>
+                <button className="burger">
+                    <span>Открыть навигацию</span>
+                </button>
             </div>
+
             <div className="header__right">
                 <nav className="nav">
                     <ul className="nav__list">
