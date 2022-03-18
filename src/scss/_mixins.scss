@@ -3,3 +3,8 @@
     @content;
   }
 }
+@mixin breakpointMin($bp) {
+  @media (min-width: $bp) {
+    @content;
+  }
+}

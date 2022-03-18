@@ -58,7 +58,7 @@ export default function Header() {
                             </li>)}
                     </ul>
                 </nav>
-                <button className="burger">
+                <button className="burger {active}">
                     <span>Открыть навигацию</span>
                 </button>
             </div>
