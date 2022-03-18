@@ -16,14 +16,15 @@
   text-decoration: none; //убираем ___
   transition: background-color .2s linear; //плавное изминения color
   &:hover {
-  text-decoration: none;
+    text-decoration: none;
   }
 
   &--red {
     background-color: $red;
     box-shadow: 0 7px 17px -10px rgba($red, .25);
 
-    &:hover {
+    &:hover,
+    &:focus {
       background-color: darken($red, 10%); //затемняем на 10 %
     }
   }

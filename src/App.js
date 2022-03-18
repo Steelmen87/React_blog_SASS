@@ -11,6 +11,7 @@ import Signup from "./components/signup";
 import SignIn from "./components/signin";
 import Reset from "./components/reset";
 import Text from "./components/Text";
+import ContactModal from "./components/modals/ContactModal";
 
 function App() {
     return (
@@ -31,7 +32,8 @@ function App() {
                     {/*<Signup/>*/}
                     {/*<SignIn/>*/}
                     {/*<Reset/>*/}
-                    <Text/>
+                    {/*<Text/>*/}
+                    <ContactModal/>
                 </div>
             </main>
         </div>
