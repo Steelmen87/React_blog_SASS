@@ -12,6 +12,8 @@ import SignIn from "./components/signin";
 import Reset from "./components/reset";
 import Text from "./components/Text";
 import ContactModal from "./components/modals/ContactModal";
+import ShareModal from "./components/modals/ShareModal";
+import StoryModal from "./components/modals/storyModal";
 
 function App() {
     return (
@@ -33,7 +35,9 @@ function App() {
                     {/*<SignIn/>*/}
                     {/*<Reset/>*/}
                     {/*<Text/>*/}
-                    <ContactModal/>
+                    {/* <ContactModal/>*/}
+                    {/* <ShareModal/>*/}
+                    <StoryModal/>
                 </div>
             </main>
         </div>

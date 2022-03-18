@@ -3,7 +3,7 @@ import close from "../../assets/images/close.png"
 
 export default function ContactModal() {
     return <div className="modal modal--no-scroll">
-        <div className="modal__content">
+        <div className="modal__content modal__content--contact">
             <button
                 className="modal__close">
                 <img src={close} alt="close"/>
