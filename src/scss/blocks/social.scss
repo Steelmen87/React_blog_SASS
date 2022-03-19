@@ -1,7 +1,9 @@
 .social {
   display: flex;
-  flex-direction: row;
   justify-content: center;
+  @include breakpoint($tablet-bp) {
+    display: none;
+  }
 }
 
 .social__item {
@@ -16,5 +18,8 @@
   text-align: center;
   border-top: 1px solid #1C1C1C;
   border-bottom: 1px solid #1C1C1C;
+  @include breakpoint($tablet-bp) {
+  display: none;
+}
 
 }

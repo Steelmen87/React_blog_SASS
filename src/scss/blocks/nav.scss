@@ -3,6 +3,12 @@
     display: none;
   }
 }
+.nav__mobile{
+  @include breakpointMin($tablet-bp) {
+    display: none;
+    margin: 3rem 0;
+  }
+}
 
 .pos {
   position: relative;
@@ -11,6 +17,9 @@
 .nav__list {
   display: flex;
   position: relative;
+  @include breakpoint($tablet-bp) {
+    flex-direction: column;
+  }
 }
 
 .nav__profile {
@@ -57,6 +66,9 @@
   text-decoration: none;
   padding: 1.4rem;
   transition: background-color .2s linear;
+  @include breakpoint($tablet-bp) {
+    padding: 1rem;
+  }
 
   &.has-subnav {
     position: relative;
@@ -76,5 +88,10 @@
       border-width: 6px 5px 0 5px;
       border-color: $white transparent transparent transparent;
     }
+  }
+  @include breakpoint($tablet-bp) {
+    padding-left: 0;
+    padding-right: 0;
+    font-size: 1.5rem;
   }
 }

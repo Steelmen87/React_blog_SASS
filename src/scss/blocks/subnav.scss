@@ -1,5 +1,11 @@
 .subnav {
   position: absolute;
   top: 100%;
+  @include  breakpoint($tablet-bp){
+    position: static;
+    background-color: transparent;
+    box-shadow: none;
+    padding-left: 2rem;
+  }
 
 }

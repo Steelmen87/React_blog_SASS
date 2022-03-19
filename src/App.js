@@ -3,7 +3,7 @@ import Header from "./components/Header";
 import Sidebar from "./components/SideBar";
 import Main from "./components/Main";
 import PostPage from "./components/PostPage";
-import React from "react";
+import React, {useState} from "react";
 import Works from "./components/Works";
 import Search from "./components/Search";
 import Profile from "./components/Profile";
@@ -16,10 +16,14 @@ import ShareModal from "./components/modals/ShareModal";
 import StoryModal from "./components/modals/storyModal";
 
 function App() {
+    const [burgerActive, setBurgerActive] = useState(false)
+    const burgerToggle = () => {
+        setBurgerActive(!burgerActive)
+    }
     return (
-        <div className="page">
-            <div className="header">
-                <Header/>
+        <div className={`page ${burgerActive && 'show-sidebar'}`}>
+            <div className="header ">
+                <Header burgerToggle={burgerToggle}/>
             </div>
             <aside className="sidebar">
                 <Sidebar/>

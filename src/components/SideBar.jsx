@@ -3,8 +3,50 @@ import sidebarHeader from "../assets/images/sidebar-header.jpg"
 import insta from "../assets/images/instagram.svg"
 import vk from "../assets/images/vk.svg"
 import pinterest from "../assets/images/pinterest.svg"
+import Navigation from "./Navigation";
 
 export default function Sidebar() {
+    const headListMobile = [
+        {
+            id: '1',
+            title: 'Главная',
+            subLi:
+                [
+                    {link: "#", text: "Создание сайтов",},
+                    {link: "#", text: "Интернет маркет",},
+                    {link: "#", text: "Продвижение видео",}]
+        },
+        {
+            id: '2',
+            title: 'Статьи',
+            subLi:
+                [
+                    {link: "#", text: "Мои статьи",},
+                    {link: "#", text: "О мире",},
+                    {link: "#", text: "Разное",}]
+        },
+        {
+            id: '3',
+            title: 'Обо мне',
+            subLi:
+                [
+                    {link: "#", text: "Коротко обо мне",},
+                    {link: "#", text: "Мои наваки",},
+                    {link: "#", text: "Мои проекты",},
+                    {link: "#", text: "Мои хобби",},
+                ]
+        },
+        {
+            id: '4',
+            title: 'Реклама',
+            subLi:
+                [
+                    {link: "#", text: "Бесплатные сервисы",},
+                    {link: "#", text: "Разное",},
+                ]
+        },
+
+    ]
     const socials = [
         {
             href: "#",
@@ -23,14 +65,28 @@ export default function Sidebar() {
         },
     ]
     return <div>
-        <div className="sidebar_header">
+        <div className="sidebar__header">
             <img src={sidebarHeader} alt="sidebar-header"/>
         </div>
         <div className="sidebar_content">
             <div className="profile">
                 <img className="profile__avatar" src="https://place-hold.it/100" alt=""/>
-                <div className="profile__name">Константин Петров</div>
-                <div className="profile__prof">Blog: Front-end Developer</div>
+                <div className="profile__header">
+                    <div className="profile__name">Константин Петров</div>
+                    <div className="profile__prof">Blog: Front-end Developer</div>
+                </div>
+                {true && <nav className="nav__mobile">
+                    <ul className="nav__list">
+                        {headListMobile.map((el, i) =>
+                            <li key={el.id}>
+                                <Navigation
+                                    key={i + "index"}
+                                    el={el}
+                                />
+                            </li>)}
+                    </ul>
+                </nav>}
+
                 <ul className="social">
                     {socials.map(social => <li className="social__item">
                         <a className="social__link" href={social.href} target="_blank">

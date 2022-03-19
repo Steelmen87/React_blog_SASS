@@ -1,5 +1,14 @@
+.profile {
+  margin-top: -5rem;
+  @include breakpoint($tablet-bp) {
+    margin-top: 3.2rem;
+    position: relative;
+
+  }
+}
+
 .profile__avatar {
-  position: relative;//что бы border-radius не проподал при margin-top -5 rem
+  position: relative; //что бы border-radius не проподал при margin-top -5 rem
   margin: 0 auto 2rem;
   display: block;
   width: 10rem;
@@ -8,17 +17,38 @@
   border-radius: 50%;
 
   box-shadow: 0 7px 20px rgba($secondary, .25);
+  @include breakpoint($tablet-bp) {
+    width: 6.5rem;
+    height: 6.5rem;
+    margin-left: 0;
+    position: absolute;
+    left: 0;
+  }
+}
+
+.profile__header {
+  margin-bottom: 2rem;
+  text-align: center;
+  @include breakpoint($tablet-bp) {
+    padding-top: 2rem;
+    padding-left: 8rem;
+    text-align: left;
+  }
 }
 
 .profile__name {
   font-size: 1.8rem;
-  text-align: center;
   color: $white;
+  @include breakpoint($tablet-bp) {
+  font-size: 1.5rem;
+  }
 }
+
 .profile__prof {
-  margin-bottom: 2rem;
   font-size: 1.4rem;
-  text-align: center;
   font-weight: 300;
   color: #DEDEDE;
+  @include breakpoint($tablet-bp) {
+    font-size: 1.2rem;
+  }
 }

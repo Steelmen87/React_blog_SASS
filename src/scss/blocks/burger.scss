@@ -22,40 +22,50 @@
 
     background-color: $white;
     position: absolute;
-    left:0;
+    left: 0;
   }
+
   &:before,
-  &:after{
-    content:"";
+  &:after {
+    content: "";
     transition: transform .2s linear;
   }
-  &:before{
-    top:0;
+
+  &:before {
+    top: 0;
   }
-  &:after{
-    bottom:0;
+
+  &:after {
+    bottom: 0;
   }
-  span{
+
+  span {
     top: 50%;
     transform: translateY(-50%);
     transition: opacity .2s linear;
   }
-  &.active{
-    span{
-     opacity: 0;
+
+  .show-sidebar & {
+    span {
+      opacity: 0;
     }
+
     &:before,
-    &:after{
-      top:50%;
+    &:after {
+      top: 50%;
     }
-    &:before{
+
+    &:before {
       transform: rotate(45deg);
     }
-    &:after{
+
+    &:after {
       transform: rotate(-45deg);
     }
+
   }
-  @include breakpointMin($tablet-bp){
+
+  @include breakpointMin($tablet-bp) {
     display: none;
   }
 }

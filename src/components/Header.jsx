@@ -1,10 +1,10 @@
 import React from "react";
 import Navigation from "./Navigation";
 
-export default function Header() {
+export default function Header({burgerToggle}) {
     const headList = [
         {
-            id:'1',
+            id: '1',
             title: 'Главная',
             subLi:
                 [
@@ -13,7 +13,7 @@ export default function Header() {
                     {link: "#", text: "Продвижение видео",}]
         },
         {
-            id:'2',
+            id: '2',
             title: 'Статьи',
             subLi:
                 [
@@ -22,7 +22,7 @@ export default function Header() {
                     {link: "#", text: "Разное",}]
         },
         {
-            id:'3',
+            id: '3',
             title: 'Обо мне',
             subLi:
                 [
@@ -33,7 +33,7 @@ export default function Header() {
                 ]
         },
         {
-            id:'4',
+            id: '4',
             title: 'Реклама',
             subLi:
                 [
@@ -58,7 +58,7 @@ export default function Header() {
                             </li>)}
                     </ul>
                 </nav>
-                <button className="burger {active}">
+                <button className="burger {active}" onClick={burgerToggle}>
                     <span>Открыть навигацию</span>
                 </button>
             </div>
