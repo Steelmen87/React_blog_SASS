@@ -4,6 +4,11 @@
   grid-template-rows: 195px;
   grid-column-gap: 13px;
   margin-bottom: 3rem;
+
+  @include breakpoint($mobile-bp){
+    grid-template-columns:140px 140px 140px 140px;
+    overflow: auto; //скролл
+  }
 }
 
 .stories__item {

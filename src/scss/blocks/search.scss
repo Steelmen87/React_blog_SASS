@@ -1,18 +1,27 @@
-.search{
-  width:100%;
+.search {
+  width: 100%;
   max-width: 21rem;
   background-color: $primary;
 }
-.search__input{
+
+.search__input {
   width: 100%;
   display: block;
   padding: 1.2rem 2rem;
   background: transparent;
   border: none;
   font-family: inherit;
-  color:$white;
+  color: $white;
   font-size: 1.2rem;
-  &::placeholder{
+
+  &::placeholder {
     color: rgba($white, .4);
+  }
+
+  @include breakpoint($tablet-bp) {
+    height: 4rem;
+    font-size: 1.6rem;
+    padding-top: .9rem;
+    padding-bottom: .9rem;
   }
 }

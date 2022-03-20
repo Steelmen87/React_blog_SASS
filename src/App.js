@@ -30,9 +30,9 @@ function App() {
             </aside>
             <main className="main">
                 <div className="container">
-                    <Main/>
+                    {/*<Main/>*/}
                     {/*<PostPage/>*/}
-                    {/*<Works/>*/}
+                    <Works/>
                     {/*<Search/>*/}
                     {/*<Profile/>*/}
                     {/*<Signup/>*/}
@@ -41,7 +41,7 @@ function App() {
                     {/*<Text/>*/}
                     {/* <ContactModal/>*/}
                     {/* <ShareModal/>*/}
-                    {/*<StoryModal/>*/}
+                    {/* <StoryModal/>*/}
                 </div>
             </main>
         </div>

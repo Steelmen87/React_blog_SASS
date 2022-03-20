@@ -45,6 +45,15 @@ export default function Sidebar() {
                     {link: "#", text: "Разное",},
                 ]
         },
+        {
+            id: '5',
+            title: 'Профиль',
+            subLi:
+                [
+                    {link: "#", text: "Мой профиль",},
+                    {link: "#", text: "Выйти",},
+                ]
+        },
 
     ]
     const socials = [

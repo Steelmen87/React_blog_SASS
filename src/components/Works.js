@@ -1,12 +1,16 @@
 import React from "react"
 import rectangle from "../assets/images/Rectangle 21.jpg"
+import Works575 from "../assets/images/Works575.jpg"
 
 export default function Works() {
     return <div>
         <h1 className="page__title">Мои работы</h1>
         <article className="work">
             <div className="work__preview">
-                <img src={rectangle} alt=""/>
+                <picture>
+                    <source srcSet={Works575} media="(max-width:575px)"/>
+                    <img src={rectangle} alt="rectangle"/>
+                </picture>
             </div>
             <div className="work__content">
                 <h2 className="work__title">

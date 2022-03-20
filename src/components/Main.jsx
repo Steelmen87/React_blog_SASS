@@ -10,7 +10,6 @@ import PostHeader from "./PosthHeader";
 import PostVideo from "./PostVideo";
 import Pagination from "./Pagination";
 
-
 export default function Main() {
     const stories = [
         {

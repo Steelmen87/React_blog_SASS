@@ -65,7 +65,7 @@ export default function Text() {
                                 src="https://www.youtube.com/embed/CvEttNvty0U"
                                 frameBorder="0"
                                 allow="accelerometer;autoplay;clipboard-write;
-                        encrypted-media;gyroscope;picture-in-picture"
+                                 encrypted-media;gyroscope;picture-in-picture"
                                 allowFullScreen
                             />
                         </span>

@@ -5,6 +5,9 @@
   background-color: $primary;
   box-shadow: 0 15px 25px rgba($black, .35);
   border-radius: 5px;
+  @include breakpoint($mobile-bp) {
+    flex-direction: column;
+  }
 }
 
 .work__preview {
@@ -17,6 +20,11 @@
     height: 100%;
     object-fit: cover;
   }
+
+  @include breakpoint($mobile-bp) {
+    width: 100%;
+    height:20rem;
+  }
 }
 
 .work__content {
@@ -25,29 +33,48 @@
   /*flex-grow: 1;*/
   max-width: 290px;
   padding: 2.5rem;
+  @include breakpoint($mobile-bp) {
+    max-width: none;
+    padding: 1.5rem;
+  }
 }
-.work__footer{
+
+.work__footer {
   margin-top: auto;
   text-align: right;
+  @include breakpoint($mobile-bp) {
+    text-align: left;
+  }
 }
-.work__title{
+
+.work__title {
   margin-bottom: 3rem;
-  color:$white;
+  color: $white;
   font-weight: 500;
-  font-size:2.4rem;
-  a{
-    color:inherit;
+  font-size: 2.4rem;
+
+  a {
+    color: inherit;
     text-decoration: none;
-    &:hover{
+
+    &:hover {
       text-decoration: underline;
     }
   }
+  @include breakpoint($mobile-bp){
+    margin-bottom: 1.5rem;
+  }
 
 }
-.work__description{
-  color:#D2D2D2;
+
+.work__description {
+  color: #D2D2D2;
   font-size: 1.6rem;
   line-height: 1.68;
   font-weight: 300;
   margin-bottom: 3rem;
+  @include breakpoint($mobile-bp){
+    margin-bottom: 1.5rem;
+    font-size: 1.4rem;
+  }
 }
