@@ -3,7 +3,7 @@ import Header from "./components/Header";
 import Sidebar from "./components/SideBar";
 import Main from "./components/Main";
 import PostPage from "./components/PostPage";
-import React, {useState} from "react";
+
 import Works from "./components/Works";
 import Search from "./components/Search";
 import Profile from "./components/Profile";
@@ -11,9 +11,11 @@ import Signup from "./components/signup";
 import SignIn from "./components/signin";
 import Reset from "./components/reset";
 import Text from "./components/Text";
-import ContactModal from "./components/modals/ContactModal";
 import ShareModal from "./components/modals/ShareModal";
 import StoryModal from "./components/modals/storyModal";
+import React, {useState} from "react";
+import ContactModal from "./components/modals/ContactModal";
+import {Route, Routes} from "react-router-dom";
 
 function App() {
     const [burgerActive, setBurgerActive] = useState(false)
@@ -30,16 +32,22 @@ function App() {
             </aside>
             <main className="main">
                 <div className="container">
-                    {/*<Main/>*/}
+                    <Routes>
+                        <Route path="/" element={<Main/>}/>
+                        <Route path="/contact" element={<ContactModal/>}/>
+                        <Route path="/myWorks" element={<Works/>}/>
+                        <Route path="/profile" element={<Profile/>}/>
+                    </Routes>
+
                     {/*<PostPage/>*/}
-                    <Works/>
+                    {/* <Works/>*/}
                     {/*<Search/>*/}
-                    {/*<Profile/>*/}
+
                     {/*<Signup/>*/}
                     {/*<SignIn/>*/}
                     {/*<Reset/>*/}
                     {/*<Text/>*/}
-                    {/* <ContactModal/>*/}
+
                     {/* <ShareModal/>*/}
                     {/* <StoryModal/>*/}
                 </div>

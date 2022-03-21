@@ -4,6 +4,7 @@ import insta from "../assets/images/instagram.svg"
 import vk from "../assets/images/vk.svg"
 import pinterest from "../assets/images/pinterest.svg"
 import Navigation from "./Navigation";
+import {Outlet, NavLink} from "react-router-dom";
 
 export default function Sidebar() {
     const headListMobile = [
@@ -113,8 +114,12 @@ export default function Sidebar() {
             </div>
         </div>
         <div className="sidebar_footer">
-            <a href="#" className="btn btn--red">Мои работы</a>
-            <button type="button" className="btn btn--blue">Написать мне</button>
+            <NavLink to="/myWorks" className="btn btn--red">Мои работы</NavLink>
+            <NavLink to="/contact">
+                <button type="button" className="btn btn--blue">
+                    Написать мне
+                </button>
+            </NavLink>
         </div>
     </div>
 }

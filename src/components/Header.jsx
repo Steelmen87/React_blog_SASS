@@ -1,5 +1,6 @@
 import React from "react";
 import Navigation from "./Navigation";
+import {NavLink} from "react-router-dom";
 
 export default function Header({burgerToggle}) {
     const headList = [
@@ -67,7 +68,7 @@ export default function Header({burgerToggle}) {
                 <nav className="nav">
                     <ul className="nav__list">
                         <li className="nav__profile">
-                            <a href="#" className="nav__link">Профиль</a>
+                            <NavLink to="/profile" className="nav__link">Профиль</NavLink>
                         </li>
                     </ul>
                 </nav>
