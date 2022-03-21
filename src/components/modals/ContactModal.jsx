@@ -1,17 +1,19 @@
 import React from "react";
 import close from "../../assets/images/close.png"
-import { useNavigate } from "react-router-dom";
+import {useNavigate} from "react-router-dom";
+import {useParams} from "react-router-dom"
 
 export default function ContactModal() {
+
     const navigate = useNavigate()
     const navigateHandle = () => {
-        navigate('../', { replace: true })
+        navigate('../', {replace: true})
     }
 
     return <div className="modal modal--no-scroll">
         <div className="modal__content modal__content--contact">
             <button onClick={navigateHandle}
-                className="modal__close">
+                    className="modal__close">
                 <img src={close} alt="close"/>
             </button>
 
